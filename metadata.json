@@ -1,0 +1,10 @@
+{
+  "name": "Lyraa - Real-time Voice AI Companion",
+  "description": "A futuristic, real-time voice-to-voice AI assistant with charming personality, dynamic audio visualization, and tool integration powered by Gemini Live API.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

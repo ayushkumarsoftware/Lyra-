@@ -1,0 +1,25 @@
+[
+  {
+    "id": "usr_guest_demo",
+    "email": "guest@lyraa.ai",
+    "passwordHash": "$2b$10$KHQTTp301dr9gGdhl4dLnecWVdrr7XQ6GnN7qXUnc6r8rh9VOsdPe",
+    "name": "Cyber Voyager",
+    "preferredVoice": "Aoede",
+    "preferredTheme": "cyber_cyan",
+    "preferredWaveform": "fluid_spline",
+    "animationIntensity": "balanced",
+    "customBio": "Exploring voice-native artificial intelligence.",
+    "createdAt": 1791527584737
+  },
+  {
+    "id": "usr_1791527592426_ngwey",
+    "email": "ayush@test.com",
+    "name": "Ayush",
+    "passwordHash": "$2b$10$m39500wNr1IekDXv072whe4ydQ8dcVbCyTJYXhUIDnckCSdZxTgrK",
+    "preferredVoice": "Aoede",
+    "preferredTheme": "cyber_cyan",
+    "preferredWaveform": "fluid_spline",
+    "animationIntensity": "balanced",
+    "createdAt": 1791527592427
+  }
+]

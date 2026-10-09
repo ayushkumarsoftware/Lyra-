@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #04060d;
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* Subtle Screen Shake Keyframes */
+@keyframes subtleShake {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  15% {
+    transform: translate3d(-3px, 1.5px, 0);
+  }
+  30% {
+    transform: translate3d(2.5px, -1.5px, 0);
+  }
+  45% {
+    transform: translate3d(-2px, -1px, 0);
+  }
+  60% {
+    transform: translate3d(1.5px, 1px, 0);
+  }
+  75% {
+    transform: translate3d(-1px, 0.5px, 0);
+  }
+  90% {
+    transform: translate3d(0.5px, -0.5px, 0);
+  }
+}
+
+.screen-shake {
+  animation: subtleShake 0.42s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* Edge-Glow Flash Keyframes */
+@keyframes edgeFlash {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.edge-glow-flash {
+  animation: edgeFlash 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Shockwave Expanding Ring Keyframes */
+@keyframes shockwaveExpand {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.4);
+    opacity: 0;
+  }
+}
+
+.shockwave-ring {
+  animation: shockwaveExpand 0.75s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+}
